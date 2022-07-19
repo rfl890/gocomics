@@ -2,7 +2,7 @@ const Axios = require("axios").default;
 const cheerio = require("cheerio");
 
 // I am only using resolve() and not reject() so you can await this function.
-const getComicUrl = (comicUrl) => {
+const getComicInfo = (comicUrl) => {
     return new Promise((resolve) => {
         Axios.get(comicUrl)
             .then(response => {
@@ -74,4 +74,4 @@ const getComicUrl = (comicUrl) => {
             });
     });
 }
-module.exports = getComicUrl;
+module.exports = getComicInfo;
