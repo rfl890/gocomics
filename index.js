@@ -1,6 +1,6 @@
 const fastify = require('fastify')({ logger: false });
 const configs = require("./config.json");
-const getComicUrl = require("./getComicUrl.js");
+const getComicInfo = require("./getComicInfo.js");
 fastify.register(require('@fastify/cors'), {});
 fastify.route({
     method: 'GET',
